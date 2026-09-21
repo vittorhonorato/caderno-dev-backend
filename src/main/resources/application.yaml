@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: caderno-dev
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shorter_url
+    username: postgres
+    password: 150525
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true

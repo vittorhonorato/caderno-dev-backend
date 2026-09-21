@@ -1,0 +1,13 @@
+package com.vittorhonorato.caderno_dev.repository;
+
+import com.vittorhonorato.caderno_dev.entity.UserEntity;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface AuthRepository extends JpaRepository<UserEntity, Long> {
+    Optional<UserEntity> findByUsername(String username);
+    boolean existsByUsername(String username);
+}
