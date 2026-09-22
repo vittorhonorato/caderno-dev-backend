@@ -3,9 +3,9 @@ spring:
     name: caderno-dev
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/shorter_url
-    username: postgres
-    password: 150525
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
 
   jpa:
     hibernate:
